@@ -96,7 +96,7 @@ public class Persona {
         String vocali = "AEIOU";
         for (int i = 0; i < 6; i++) {
             char c = cod.charAt(i);
-            if (vocali.indexOf(c) != -1) {
+            if (vocali.indexOf(c) != -1 || Character.isDigit(c)) {
                 return false;
             }
         }
